@@ -11,12 +11,12 @@ public class nofaller : MonoBehaviour
     {
         rB = GetComponent<Rigidbody>();
 
-        rB.constraints = RigidbodyConstraints.FreezeAll;
+        rB.constraints = RigidbodyConstraints.FreezePosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        rB.angularVelocity = new Vector3(100, 0, 30);
     }
 }
