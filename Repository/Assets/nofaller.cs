@@ -17,6 +17,6 @@ public class nofaller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rB.angularVelocity = new Vector3(100, 0, 30);
+        rB.angularVelocity = new Vector3(100, 50, 30);
     }
 }
